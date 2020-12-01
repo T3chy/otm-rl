@@ -127,7 +127,7 @@
       <roadconnection id="22" in_link="12" in_link_lanes="1#1" out_link="10" out_link_lanes="1#1"/>
       <roadconnection id="23" in_link="12" in_link_lanes="1#1" out_link="13" out_link_lanes="1#1"/>
       <roadconnection id="24" in_link="12" in_link_lanes="1#1" out_link="3" out_link_lanes="1#1"/>
-   
+
       <roadconnection id="25" in_link="14" in_link_lanes="1#1" out_link="15" out_link_lanes="1#1"/>
 
       <roadconnection id="26" in_link="15" in_link_lanes="1#1" out_link="3" out_link_lanes="1#1"/>
@@ -335,9 +335,9 @@
         <phase id="15" roadconnection_ids="30,31"   yellow_time="3" red_clear_time="2" min_green_time="5"/>
 
         <phase id="16" roadconnection_ids="34,35"   yellow_time="3" red_clear_time="2" min_green_time="5"/>
-        
+
         <phase id="11" roadconnection_ids="17"   yellow_time="3" red_clear_time="2" min_green_time="5"/>
-        
+
 
 
       </signal>
@@ -378,25 +378,24 @@
 
     <target_actuators ids="1"/>
 
-      <schedule>
-      
-        <schedule_item start_time="0" cycle="100" offset="30">
+
+	<parameters>
+		<parameter name="start_time" value="0"/>
+		<parameter name="cycle" value="100"/>
+		<parameter name="offset" value="30"/>
+	</parameters>
 
           <stages>
 
-            <stage order="1" phases="1,6" duration="30"/>
+            <stage  phases="1,6" duration="30"/>
 
-            <stage order="2" phases="7" duration="20"/>
+            <stage  phases="7" duration="20"/>
 
-            <stage order="3" phases="12" duration="20"/>
+            <stage  phases="12" duration="20"/>
 
-            <stage order="4" phases="13,14" duration="30"/>
+            <stage  phases="13,14" duration="30"/>
 
           </stages>
-
-        </schedule_item>
-
-      </schedule>
 
     </controller>
 
@@ -404,26 +403,25 @@
 
     <target_actuators ids="2"/>
 
-      <schedule>
-      
-        <schedule_item start_time="0" cycle="100" offset="30">
+
+	<parameters>
+		<parameter name="start_time" value="0"/>
+		<parameter name="cycle" value="100"/>
+		<parameter name="offset" value="30"/>
+	</parameters>
 
           <stages>
 
 
-            <stage order="1" phases="2,5" duration="30"/>
+            <stage  phases="2,5" duration="30"/>
 
-            <stage order="2" phases="8" duration="20"/>
+            <stage  phases="8" duration="20"/>
 
-            <stage order="3" phases="11" duration="20"/>
+            <stage  phases="11" duration="20"/>
 
-            <stage order="4" phases="15,16" duration="30"/>
+            <stage  phases="15,16" duration="30"/>
 
           </stages>
-
-        </schedule_item>
-
-      </schedule>
 
     </controller>
 
@@ -431,25 +429,23 @@
 
     <target_actuators ids="3"/>
 
-      <schedule>
-      
-        <schedule_item start_time="0" cycle="100" offset="30">
 
+	<parameters>
+		<parameter name="start_time" value="0"/>
+		<parameter name="cycle" value="100"/>
+		<parameter name="offset" value="30"/>
+	</parameters>
           <stages>
 
-            <stage order="1" phases="3,4" duration="30"/>
+            <stage  phases="3,4" duration="30"/>
 
-            <stage order="2" phases="9" duration="20"/>
+            <stage  phases="9" duration="20"/>
 
-            <stage order="3" phases="10" duration="20"/>
+            <stage  phases="10" duration="20"/>
 
-            <stage order="4" phases="17,18" duration="30"/>
+            <stage  phases="17,18" duration="30"/>
 
           </stages>
-
-        </schedule_item>
-
-      </schedule>
 
     </controller>
 
