@@ -6,7 +6,7 @@ duration = 3600.
 advance_time = 300.
 
 # load the configuration file
-name = '50nodes.xml'
+name = 'berkeley_large.xml'
 otm = OTMWrapper(name)
 
 # initialize (prepare/rewind the simulation)
@@ -22,8 +22,9 @@ while(time<end_time):
   # Insert your code here -----
   print(otm.otm.get_current_time())
   time += advance_time;
+  print(otm.get_links_table())
+
 
 # always end by deleting the wrapper
-print(otm.get_links_table())
 print(otm.to_networkx())
 del otm
